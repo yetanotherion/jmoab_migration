@@ -2,10 +2,10 @@
 
 Maven is based on poms (xml).
 Four main features to factorize build logic:
-* &lt properties &gt: xml elements can be interpolated with those.
-* &lt parents &gt: child can import/override what's defined in parents
-* &lt dependencyManagement &gt/&lt pluginManagement &gt: factorize &lt dependency &gt/&lt plugin &gt definitions
-* &lt profiles &gt: part of the poms can be redefined/overridden based on conditions:
+* `<properties>` xml elements can be interpolated with those.
+* `<parents>` child can import/override what's defined in parents
+* `<dependencyManagement>/<pluginManagement>` factorize `<dependency>/<plugin>` definitions
+* `<profiles>`: part of the poms can be redefined/overridden based on conditions:
   * static: file system content
   * dynamic: property values
 

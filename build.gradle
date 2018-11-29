@@ -4,7 +4,8 @@ ext {
     'state_of_the_art.md',
     'coming_up_with_the_plan.md',
     'mixing_maven_and_gradle.md',
-    'big_bang.md'
+    'big_bang.md',
+    'journey_to_the_converter.md'
     ]
 }
 
@@ -12,7 +13,7 @@ task publish {
     inputs.file('head.html')
     inputs.files(slides)
     inputs.file('tail.html')
-    outputs.file("$buildDir/slides.html")
+    outputs.file("slides.html")
     doLast {
         outputs.files.singleFile.text = inputs.files.collect { it.text }.join("\n")
     }

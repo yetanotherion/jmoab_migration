@@ -1,4 +1,4 @@
-# Big bang (May 2017)
+### Big bang (May 2017)
 
 Idea:
 * Use a converter that will be capable of converting all poms in one shot.
@@ -14,3 +14,4 @@ Idea:
 GO
 
 ---
+layout: false

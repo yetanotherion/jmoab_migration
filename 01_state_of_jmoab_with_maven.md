@@ -24,5 +24,6 @@
   - poms are not maintainable
 
 .center[![compiling](https://imgs.xkcd.com/comics/compiling.png)] 
-.footnote[XKCD]
+.footnote[XKCD]\
+
 ---

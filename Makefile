@@ -1,12 +1,12 @@
-all: state_of_jmoab_with_maven.md state_of_the_art.md coming_up_with_the_plan.md mixing_maven_and_gradle.md big_bang.md head.html journey_to_the_converter.md tail.html
-	cat head.html > slides.html
-	cat state_of_jmoab_with_maven.md >> slides.html
-	cat state_of_the_art.md >> slides.html
-	cat coming_up_with_the_plan.md >> slides.html
-	cat mixing_maven_and_gradle.md >> slides.html
-	cat big_bang.md >> slides.html
-	cat journey_to_the_converter.md >> slides.html
-	cat tail.html >> slides.html
+all: 01_state_of_jmoab_with_maven.md 02_state_of_the_art.md 03_coming_up_with_the_plan.md 04_mixing_maven_and_gradle.md 05_big_bang.md 00_head.html 06_journey_to_the_converter.md 99_tail.html
+	cat 00_head.html > slides.html
+	cat 01_state_of_jmoab_with_maven.md >> slides.html
+	cat 02_state_of_the_art.md >> slides.html
+	cat 03_coming_up_with_the_plan.md >> slides.html
+	cat 04_mixing_maven_and_gradle.md >> slides.html
+	cat 05_big_bang.md >> slides.html
+	cat 06_journey_to_the_converter.md >> slides.html
+	cat 99_tail.html >> slides.html
 
 display: all
 	bash display.sh

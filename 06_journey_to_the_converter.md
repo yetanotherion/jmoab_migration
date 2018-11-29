@@ -15,3 +15,5 @@ Issues:
   * Plugin translation: need to have the effective plugin to translate it
   * Computing effective pom is necessary for [plugins](https://confluence.criteois.com/display/RP/PluginManagement)
 *
+
+---

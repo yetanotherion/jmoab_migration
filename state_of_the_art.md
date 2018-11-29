@@ -357,8 +357,6 @@ JMOABProject(A, build)
     ├── JMOABProject(D, test)
     └── JMOABProject(F, build)
 ```
-
-
 ---
 # State of the art
 
@@ -372,7 +370,9 @@ Bazel (Google, I'd call it the successor of make)
 
 
 Pants,Buck (Twitter/Facebook):
-```Pants, Buck: Both tools were created and developed by ex-Googlers at Twitter and Foursquare,
+
+```
+Pants, Buck: Both tools were created and developed by ex-Googlers at Twitter and Foursquare,
 and Facebook respectively. They have been modeled after Bazel, but their feature
 sets are different, so they aren't viable alternatives for us.
 ```
@@ -381,9 +381,9 @@ Bazel@Google
 * distributed execution of the DAG: hundreds of cpus available for your build.
 * distributed cache of the task: input of the task.
 
----
 
-#State of the art
+---
+# State of the art
 
 Sbt
 * scala-only

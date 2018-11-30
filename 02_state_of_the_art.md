@@ -340,28 +340,20 @@ $ mvn clean install
 
 it builds everything in sequence again.
 
----
-# State of the art
-
-Incremental builds, how it could be scheduled:
+However,
 
 ```groovy
-JMOABProject(A, build)
-├── JMOABProject(B, build)
-│   ├── JMOABProject(B, test)
-│   └── JMOABProject(E, build)
-├── JMOABProject(A, test)
-├── JMOABProject(C, build)
-│   └── JMOABProject(G, build) *
-└── JMOABProject(D, build)
-    ├── JMOABProject(D, test)
-    └── JMOABProject(F, build)
+JMOABProject(G, build) *
 ```
+
+should be built
+only (Incremental builds).
+
 ---
 # State of the art
 
 
-Bazel (Google, I'd call it the successor of make)
+__Bazel__ (Google, I'd call it the successor of make)
 * DAG in parallel
 * (distributed) cache of the task: input of the task.
 * scala support not mature
@@ -369,7 +361,7 @@ Bazel (Google, I'd call it the successor of make)
 * no maven plugin equivalent [~45 plugin in maven](https://confluence.criteois.com/display/RP/Maven+plugins+and+their+Gradle+equivalent)
 
 
-Pants,Buck (Twitter/Facebook):
+__Pants,Buck__ (Twitter/Facebook):
 
 ```
 Pants, Buck: Both tools were created and developed by ex-Googlers at Twitter and Foursquare,
@@ -377,22 +369,23 @@ and Facebook respectively. They have been modeled after Bazel, but their feature
 sets are different, so they aren't viable alternatives for us.
 ```
 
-Bazel@Google
+__Bazel at Google__
+* Same as above +
 * distributed execution of the DAG: hundreds of cpus available for your build.
-* distributed cache of the task: input of the task.
+
 
 
 ---
 # State of the art
 
-Sbt
+__Sbt__
 * scala-only
 * no disributed build
 * Linkedin migrated sbt to gradle and reports 400% of improvement
 https://engineering.linkedin.com/blog/2018/07/how-we-improved-build-time-by-400-percent
-* why not mill?
+* why not [mill](https://github.com/lihaoyi/mill)?
 
-Gradle
+__Gradle__
 * DAG in parallel (plan to go distributed according to our talks with the CEO of gradle)
 * Distributed cache (if tasks support it)
 * Many maven plugin ported to gradle

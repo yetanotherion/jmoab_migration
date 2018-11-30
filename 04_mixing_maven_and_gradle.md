@@ -1,4 +1,5 @@
-# Mixing maven and gradle (April 2017)
+
+### Mixing maven and gradle (April 2017)
 
 How others did
 * [Braintree/gradle to bazel](https://www.pgrs.net/2015/09/01/migrating-from-gradle-to-Idea/):
@@ -15,7 +16,7 @@ How others did
   * mix of auto/manual fixes
 
 ---
-# Mixing maven and gradle (April 2017)
+### Mixing maven and gradle (April 2017)
 First try
 [mvn and gradle in the jmoab](https://confluence.criteois.com/pages/viewpage.action?pageId=326303105)
 

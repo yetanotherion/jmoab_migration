@@ -18,6 +18,9 @@
 
 - December 2017: We start "plateauing" at **80%** conversion
 
+--
+
+.center[![Hmmm](imgs/chess.jpg)]
 ???
 Pretty bumed.
 January, keep working while trying to come up with alternatives.

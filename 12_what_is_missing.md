@@ -3,7 +3,7 @@
 
 - Gradle scripts are good:
    - far easier to extend
-   - allows and encourage designs based on convention
+   - allows and encourages designs based on convention
 
 
 --

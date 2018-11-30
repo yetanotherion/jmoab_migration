@@ -5,7 +5,6 @@
 - The big bang thing doesn't look good
 - How to bootstrap things using what we have?
 
-
 --
 
 - Flying Bridge to Ann Arbor / Beers
@@ -15,6 +14,10 @@
    - use the converted gradle projects
    - replace compilation steps with calls to Maven
 
+???
+- Lonely nights at the hotel
+- Not so lonely nights at the bar
+- -7 -> +1 Celsius
 
 --
 

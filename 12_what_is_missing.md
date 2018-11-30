@@ -5,8 +5,12 @@
    - far easier to extend
    - allows and encourage designs based on convention
 
-- Our Gradle script are so-so:
-   - the result of an automated conversion
+
+--
+
+- **Our** Gradle scripts are so-so:
+   - the result of a semi-automated conversion
    - versioning of external dependencies is still tricky
-   - 
+   - scala migration should be far easier (in the build scripts)
+
 ---

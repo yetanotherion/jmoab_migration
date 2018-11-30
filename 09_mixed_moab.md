@@ -67,7 +67,7 @@ It is a problem that devs can't use a mixed workspace because that means that al
 --
 
 - Second Flying Bridge / More beers
-- Full mixed gradle support without converter
+- Full mixed gradle/maven support without converter
 
 
 --

@@ -353,7 +353,7 @@ only (Incremental builds).
 # State of the art
 
 
-__Bazel__ (Google, I'd call it the successor of make)
+__Bazel__ (Google)
 * DAG in parallel
 * (distributed) cache of the task: input of the task.
 * scala support not mature

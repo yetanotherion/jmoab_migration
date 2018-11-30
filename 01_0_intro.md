@@ -14,7 +14,6 @@ class: center, middle
 
 - Emmanuel Guérin
     - Build Services Team
-    - Worked on/off on build/CI systems for 15 years
 
 - Jon Alberdi
 

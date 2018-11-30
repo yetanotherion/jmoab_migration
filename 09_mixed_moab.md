@@ -19,9 +19,16 @@
 - Not so lonely nights at the bar
 - -7 -> +1 Celsius
 
+???
+- Lonely nights at the hotel
+- Not so lonely nights at the bar
+- -7 -> +1 Celsius
+
+
 --
 
 - April 2018, JMOAB 1.5 is born!
+
 
 ---
 class: center

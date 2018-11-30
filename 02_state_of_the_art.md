@@ -27,10 +27,10 @@ At least, when it's
 
 (Let's not complain about parent poms)
 
- [CEA/FramaC](http://gallium.inria.fr/~scherer/events/jbuilder-design-session-sep-09-2017/slides-bobot-frama-C.pdf)
+.center[![cea_frama_c_makefile](imgs/cea_frama_c_makefile.png)]
 
-![cea_frama_c_makefile](imgs/cea_frama_c_makefile.png)
-
+.center[ [CEA/FramaC](http://gallium.inria.fr/~scherer/events/jbuilder-design-session-sep-09-2017/slides-bobot-frama-C.pdf)
+]
 
 ---
 # State of the art
@@ -53,7 +53,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How mvn schedules it.
+How mvn schedules it. .side[1]
 
 ```groovy
 JMOABProject(A, build) *
@@ -70,7 +70,7 @@ JMOABProject(A, build) *
 ---
 # State of the art
 
-How mvn schedules it.
+How mvn schedules it. .side[2]
 
 ```groovy
 JMOABProject(A, build)
@@ -87,7 +87,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How mvn schedules it.
+How mvn schedules it. .side[3]
 
 ```groovy
 JMOABProject(A, build)
@@ -104,7 +104,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How mvn schedules it.
+How mvn schedules it. .side[4]
 
 ```groovy
 JMOABProject(A, build)
@@ -121,7 +121,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How mvn schedules it.
+How mvn schedules it. .side[5]
 
 ```groovy
 JMOABProject(A, build)
@@ -138,7 +138,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How mvn schedules it.
+How mvn schedules it. .side[6]
 
 ```groovy
 JMOABProject(A, build)
@@ -155,7 +155,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How mvn schedules it.
+How mvn schedules it. .side[7]
 
 ```groovy
 JMOABProject(A, build)
@@ -172,7 +172,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How mvn schedules it.
+How mvn schedules it. .side[8]
 
 ```groovy
 JMOABProject(A, build)
@@ -189,7 +189,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How mvn schedules it.
+How mvn schedules it. .side[9]
 
 ```groovy
 JMOABProject(A, build)
@@ -206,7 +206,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How mvn schedules it.
+How mvn schedules it. .side[10]
 
 ```groovy
 JMOABProject(A, build)
@@ -224,7 +224,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How it could be scheduled.
+How it could be scheduled. .side[1]
 
 ```groovy
 JMOABProject(A, build) *
@@ -242,7 +242,7 @@ JMOABProject(A, build) *
 ---
 # State of the art
 
-How it could be scheduled.
+How it could be scheduled. .side[2]
 
 ```groovy
 JMOABProject(A, build)
@@ -260,7 +260,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How it could be scheduled.
+How it could be scheduled. .side[3]
 
 ```groovy
 JMOABProject(A, build)
@@ -278,7 +278,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How it could be scheduled.
+How it could be scheduled. .side[4]
 
 ```groovy
 JMOABProject(A, build)
@@ -296,7 +296,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How it could be scheduled.
+How it could be scheduled. .side[5]
 
 ```groovy
 JMOABProject(A, build)
@@ -314,7 +314,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-How it could be scheduled.
+How it could be scheduled. .side[6]
 
 ```groovy
 JMOABProject(A, build)

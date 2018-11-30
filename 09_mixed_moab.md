@@ -21,10 +21,9 @@
 - April 2018, JMOAB 1.5 is born!
 
 ---
-class: center, middle 
+class: center
 # An image = a thousand words
 ![Performance](imgs/JMOABPerf1.png)
-
 ???
 The performance before the jump doesn't include the packaging step.
 The one after the jump does.
@@ -49,7 +48,7 @@ The one after the jump does.
    - June 15th: WOOT WOOT mail: presubmit faster
 
 ---
-class: center, middle 
+class: center
 # JMOAB 1.6
 ![Performance](imgs/JMOABPerf2.png)
 
@@ -70,5 +69,9 @@ It is a problem that devs can't use a mixed workspace because that means that al
 - Second Flying Bridge / More beers
 - Full mixed gradle support without converter
 
+
+--
+
+- Time to start cracking on that conversion...
 
 ---

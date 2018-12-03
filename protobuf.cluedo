@@ -1,0 +1,23 @@
+# Stacktrace cluedo
+```
+May 21, 2018 6:24:06 AM io.opencensus.implcore.trace.export.SpanExporterImpl$Worker onBatchExport
+WARNING: Exception thrown by the service export io.opencensus.exporter.trace.stackdriver.StackdriverTraceExporter
+java.lang.VerifyError: Bad type on operand stack
+Exception Details:
+Location:
+com/google/api/AnnotationsProto.registerAllExtensions(Lcom/google/protobuf/ExtensionRegistryLite;)V @4: invokevirtual
+Reason:
+Type 'com/google/protobuf/GeneratedMessage$GeneratedExtension' (current frame, stack[1]) is not assignable to 'com/google/protobuf/
+Current Frame:
+bci: @4
+flags: { }
+locals: { 'com/google/protobuf/ExtensionRegistryLite' }
+stack: { 'com/google/protobuf/ExtensionRegistryLite', 'com/google/protobuf/GeneratedMessage$GeneratedExtension' }
+Bytecode:
+0x0000000: 2ab2 0003 b600 04b1
+
+at com.google.devtools.cloudtrace.v2.TraceProto.<clinit>(TraceProto.java:198)
+...
+```
+
+---

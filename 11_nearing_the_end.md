@@ -3,7 +3,7 @@
 - What has changed:
    - Criteo code gained some more weight:
       - ~~239~~ 304 repositories
-      - ~~652~~ 1127 artifacts
+      - ~~652~~ 1127 projects (scala double build)
    - 70% of projects migrated
    - Build times:
       - a new MOAB each 30 min

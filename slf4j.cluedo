@@ -1,0 +1,26 @@
+# Stacktrace cluedo
+
+```
+SLF4J: See also http://www.slf4j.org/codes.html#log4jDelegationLoop for more details.
+Exception in thread "main" java.lang.ExceptionInInitializerError
+    at java.lang.Class.forName0(Native Method)
+    at java.lang.Class.forName(Class.java:264)
+    at org.slf4j.impl.Log4jLoggerFactory.<clinit>(Log4jLoggerFactory.java:48)
+    at org.slf4j.impl.StaticLoggerBinder.<init>(StaticLoggerBinder.java:72)
+    at org.slf4j.impl.StaticLoggerBinder.<clinit>(StaticLoggerBinder.java:45)
+    at org.slf4j.LoggerFactory.bind(LoggerFactory.java:143)
+    at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:122)
+    at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:378)
+    at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:328)
+    at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:349)
+    at com.criteo.hadoop.garmadon.agent.EventAgent.<clinit>(EventAgent.java:31)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:498)
+    at sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:386)
+    at sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:401)
+Caused by: java.lang.IllegalStateException: Detected both log4j-over-slf4j.jar AND slf4j-log4j12.jar on the class path, preempting StackOverflowError. See also http://www.slf4j.org/codes.html#log4jDelegationLoop for more details.
+    at org.apache.log4j.Log4jLoggerFactory.<clinit>(Log4jLoggerFactory.java:51
+```
+---

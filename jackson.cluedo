@@ -1,0 +1,29 @@
+# Stacktrace cluedo
+
+```
+I 1129 09:39:59.406 THREAD1: Serving admin http on 0.0.0.0/0.0.0.0:57001
+java.lang.NoSuchFieldError: WRITE_DURATIONS_AS_TIMESTAMPS
+        at com.fasterxml.jackson.datatype.joda.ser.DurationSerializer.<init>(DurationSerializer.java:28)
+        at com.fasterxml.jackson.datatype.joda.ser.DurationSerializer.<init>(DurationSerializer.java:25)
+        at com.fasterxml.jackson.datatype.joda.JodaModule.<init>(JodaModule.java:45)
+...
+        at com.criteo.hosting.http.CriteoHttpServer.nonExitingMain(CriteoHttpServer.scala:8)
+        at com.twitter.app.App$class.main(App.scala:141)
+        at com.criteo.hosting.http.CriteoHttpServer.main(CriteoHttpServer.scala:8)
+        at com.criteo.langoustine.app.LangoustineLauncher$class.main(LangoustineLauncher.scala:34)
+        at com.criteo.langoustine.app.FastLangoustineLauncher.main(FastLangoustineLauncher.scala:35)
+        at com.criteo.enterprise.alpha.langoustine.AlphaApp.main(AlphaApp.scala)
+Exception thrown in main on startup
+...
+FATAL: LoadService: failed to instantiate 'com.twitter.finagle.stats.HostMetricsExporter' for the requested service 'com.twitter.finagle.http.HttpMuxHandler'
+com.fasterxml.jackson.databind.JsonMappingException: Jackson version is too old 2.4.4
+...
+```
+
+--
+
+```
+(jackson versions to align)
+```
+
+---

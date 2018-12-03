@@ -16,5 +16,5 @@ class: center, middle
     - Build Services Team
 
 - Jon Alberdi
-
+   - Build Services Team
 ---

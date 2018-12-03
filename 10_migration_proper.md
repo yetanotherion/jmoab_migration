@@ -135,7 +135,7 @@ Exception in thread "main" java.lang.NoClassDefFoundError: Could not initialize 
 ---
 
 
-# Stacktrace cludo
+# Stacktrace cluedo
 
 Anyone has one of netty?
 

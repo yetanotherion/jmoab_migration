@@ -7,9 +7,17 @@ Idea:
 * [@oehme](https://github.com/oehme) Gradle perf lead: +1!
 
 [Feasibility study](https://confluence.criteois.com/display/RP/Feasibility+of+maven+to+gradle+automated+translation)
+
+--
 * 637 pom.xml
+
+--
 * 50 reviews merged per week on pom
-* 50 maven plugins, if we automate the translation of 28 chosen plugins, it may be ok.
+
+--
+* if we automate the translation of 28 / 47 maven plugins, it may be ok
+
+--
 
 __GO__
 

@@ -55,6 +55,7 @@ JMOABProject(A, build)
 
 How mvn schedules it. .side[1]
 
+--
 ```groovy
 JMOABProject(A, build) *
 ├── JMOABProject(B, build)
@@ -226,6 +227,7 @@ JMOABProject(A, build)
 
 How it could be scheduled. .side[1]
 
+--
 ```groovy
 JMOABProject(A, build) *
 ├── JMOABProject(B, build)
@@ -340,8 +342,7 @@ $ mvn clean install
 
 it builds everything in sequence again.
 
-However,
-
+--
 ```groovy
 JMOABProject(G, build) *
 ```
@@ -354,6 +355,7 @@ only (Incremental builds).
 
 
 __Bazel__ (Google)
+
 * DAG in parallel
 * (distributed) cache of the task: input of the task.
 * scala support not mature
@@ -361,7 +363,7 @@ __Bazel__ (Google)
 * no maven plugin equivalent [~45 plugin in maven](https://confluence.criteois.com/display/RP/Maven+plugins+and+their+Gradle+equivalent)
 
 
-__Pants,Buck__ (Twitter/Facebook):
+__Pants, Buck__ (Twitter/Facebook):
 
 ```
 Pants, Buck: Both tools were created and developed by ex-Googlers at Twitter and Foursquare,
@@ -370,6 +372,7 @@ sets are different, so they aren't viable alternatives for us.
 ```
 
 __Bazel at Google__
+
 * Same as above +
 * distributed execution of the DAG: hundreds of cpus available for your build.
 
@@ -379,10 +382,9 @@ __Bazel at Google__
 # State of the art
 
 __Sbt__
-* scala-only
+* scala only
 * no disributed build
-* Linkedin migrated sbt to gradle and reports 400% of improvement
-https://engineering.linkedin.com/blog/2018/07/how-we-improved-build-time-by-400-percent
+* Linkedin migrated sbt to gradle and reports 400% of [improvement](https://engineering.linkedin.com/blog/2018/07/how-we-improved-build-time-by-400-percent).
 * why not [mill](https://github.com/lihaoyi/mill)?
 
 __Gradle__

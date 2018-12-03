@@ -16,17 +16,24 @@
 
 ---
 ### Mixing maven and gradle (April 2017)
-First try
+First try:
 
 [mvn and gradle in the jmoab](https://confluence.criteois.com/pages/viewpage.action?pageId=326303105)
 
-* Avoids big bang integration/distributes migration/validation
+* Avoids big bang integration, distributes migration and validation.
 
 But,
 
+--
 * no cross-repo in IDE
+
+--
 * requires temporary development in BFS
+
+--
 * no vision on how the script files will look like in the end.
+
+--
 
 __NOGO__
 

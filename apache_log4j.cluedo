@@ -1,4 +1,4 @@
-# Stacktrace cludo
+# Stacktrace cluedo
 ```
 Exception in thread "main" java.lang.NoClassDefFoundError: Could not initialize class org.apache.hadoop.conf.Configuration
 	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:304)

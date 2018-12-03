@@ -15,7 +15,7 @@ java.lang.NoSuchFieldError: WRITE_DURATIONS_AS_TIMESTAMPS
         at com.criteo.enterprise.alpha.langoustine.AlphaApp.main(AlphaApp.scala)
 Exception thrown in main on startup
 ...
-FATAL: LoadService: failed to instantiate 'com.twitter.finagle.stats.HostMetricsExporter' for the requested service 'com.twitter.finagle.http.HttpMuxHandler'
+FATAL: LoadService: failed to instantiate 'com.twitter.finagle.stats.HostMetricsExporter' for the requested service ...
 com.fasterxml.jackson.databind.JsonMappingException: Jackson version is too old 2.4.4
 ...
 ```
@@ -23,7 +23,7 @@ com.fasterxml.jackson.databind.JsonMappingException: Jackson version is too old 
 --
 
 ```
-(jackson versions to align)
+align jackson versions
 ```
 
 ---

@@ -1,7 +1,8 @@
 # Stacktrace cluedo
 
 ```
-Cause: java.lang.AbstractMethodError: com.criteo.uc.webserver.controllers.AnnotateControllerTest.com$twitter$inject$Logging$_setter_$com$twitter$inject$Logging$$guiceAwareLogger_$eq(Lgrizzled/slf4j/Logger;)V
+Cause: java.lang.AbstractMethodError: com.criteo.uc.webserver.controllers.AnnotateControllerTest.com$twitter$inject$Logging\
+$_setter_$com$twitter$inject$Logging$$guiceAwareLogger_$eq(Lgrizzled/slf4j/Logger;)V
   at com.twitter.inject.Logging$class.$init$(Logging.scala:131)
   ...
 ```
@@ -9,7 +10,7 @@ Cause: java.lang.AbstractMethodError: com.criteo.uc.webserver.controllers.Annota
 --
 
 ```
-group:"com.twitter.inject", module:"inject-core_2.11"
+exclude group:"com.twitter.inject", module:"inject-core_2.11"
 ```
 
 ---

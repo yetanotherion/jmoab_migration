@@ -20,7 +20,13 @@ Exception in thread "main" java.lang.ExceptionInInitializerError
     at java.lang.reflect.Method.invoke(Method.java:498)
     at sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:386)
     at sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:401)
-Caused by: java.lang.IllegalStateException: Detected both log4j-over-slf4j.jar AND slf4j-log4j12.jar on the class path, preempting StackOverflowError. See also http://www.slf4j.org/codes.html#log4jDelegationLoop for more details.
+Caused by: java.lang.IllegalStateException: Detected both log4j-over-slf4j.jar AND slf4j-log4j12.jar on the class path...
     at org.apache.log4j.Log4jLoggerFactory.<clinit>(Log4jLoggerFactory.java:51
+```
+
+--
+
+```
+exclude log4j-over-slf4j
 ```
 ---

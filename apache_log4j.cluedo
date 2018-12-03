@@ -1,5 +1,5 @@
 # Stacktrace cluedo
-```
+```groovy
 Exception in thread "main" java.lang.NoClassDefFoundError: Could not initialize class org.apache.hadoop.conf.Configuration
 	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:304)
 	at org.apache.hadoop.security.UserGroupInformation.loginUserFromSubject(UserGroupInformation.java:891)
@@ -12,7 +12,7 @@ Exception in thread "main" java.lang.NoClassDefFoundError: Could not initialize 
 
 --
 
-```
-exclude org.apache.logging.log4j
+```groovy
+exclude group:"org.apache.logging.log4j"
 ```
 ---

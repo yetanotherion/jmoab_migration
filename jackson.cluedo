@@ -1,6 +1,6 @@
 # Stacktrace cluedo
 
-```
+```groovy
 I 1129 09:39:59.406 THREAD1: Serving admin http on 0.0.0.0/0.0.0.0:57001
 java.lang.NoSuchFieldError: WRITE_DURATIONS_AS_TIMESTAMPS
         at com.fasterxml.jackson.datatype.joda.ser.DurationSerializer.<init>(DurationSerializer.java:28)
@@ -22,7 +22,7 @@ com.fasterxml.jackson.databind.JsonMappingException: Jackson version is too old 
 
 --
 
-```
+```groovy
 align jackson versions
 ```
 

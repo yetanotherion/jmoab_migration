@@ -1,6 +1,6 @@
 # Stacktrace cluedo
 
-```
+```groovy
 java.lang.Exception: java.lang.IncompatibleClassChangeError: Implementing class
     at com.twitter.inject.server.EmbeddedTwitterServer$$anonfun$runNonExitingMain$1.apply$mcV$sp(EmbeddedTwitterServer...
     at com.twitter.inject.server.EmbeddedTwitterServer$$anonfun$runNonExitingMain$1.apply(EmbeddedTwitterServer.scala:624)
@@ -16,7 +16,7 @@ java.lang.Exception: java.lang.IncompatibleClassChangeError: Implementing class
 
 --
 
-```
+```groovy
 exclude group:"com.typesafe.scala-logging", module: "scala-logging_2.11"
 ```
 

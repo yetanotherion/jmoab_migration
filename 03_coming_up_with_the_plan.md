@@ -1,6 +1,6 @@
 # Goals to reach
 
-[JMOAB2 Kick-off (Aug/2017)](https://confluence.criteois.com/display/RP/Kick-off%3A+Towards+an+Efficient+JMOAB)
+[JMOAB2 Kick-off (Aug/2017)](https://confluence.criteois.com/display/RP/Kick-off%3A+Towards+an+Efficient+JMOAB): JMOAB in gradle
 
 --
  * Reduce the duration of JMOAB-build to less than 30 minutes.

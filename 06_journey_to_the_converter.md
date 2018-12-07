@@ -280,7 +280,6 @@ repo/parquet-macros/pom.xml
 ```
 ---
 
-
 # Conversion examples
 
 repo/parquet-macros/scala.gradle
@@ -304,6 +303,7 @@ def additionalParameters = ["-target:jvm-1.7", // from pluginManagement of repo/
 compileScala.scalaCompileOptions.additionalParameters = additionalParameters
 compileTestScala.scalaCompileOptions.additionalParameters = additionalParameters
 ```
+
 ---
 
 # Conversion examples
@@ -316,6 +316,42 @@ apply from: repoFile('scala.gradle')
 repo/parquet-macros/parquet-macros_2.11/build.gradle:
 
 ```groovy
+apply from: repoFile('parquet-macros/parent.gradle')
+apply from: repoFile('parquet-macros/scala.gradle')
+
+ext {
+    artifactId = "parquet-macros_2.11"
+    groupId = "com.criteo.hadoop"
+    scala_version = scala211_version
+    scala_version_short = "2.11"
+}
+
+```
+
+--
+
+scalamacros version ?
+
+---
+
+# Conversion examples
+repo/langoustine-run/build.gradle:
+
+```groovy
+apply from: repoFile('scala.gradle')
+```
+
+repo/parquet-macros/parquet-macros_2.11/build.gradle:
+
+```groovy
+apply from: repoFile('parquet-macros/parent.gradle')
+ext {
+    artifactId = "parquet-macros_2.11"
+    groupId = "com.criteo.hadoop"
+    scala_version = scala211_version
+    scala_version_short = "2.11"
+}
+
 apply from: repoFile('parquet-macros/scala.gradle')
 ```
 

@@ -55,7 +55,6 @@ JMOABProject(A, build)
 
 How mvn schedules it. .side[1]
 
---
 ```groovy
 JMOABProject(A, build) *
 ├── JMOABProject(B, build)
@@ -227,7 +226,6 @@ JMOABProject(A, build)
 
 How it could be scheduled. .side[1]
 
---
 ```groovy
 JMOABProject(A, build) *
 ├── JMOABProject(B, build)
@@ -343,6 +341,8 @@ $ mvn clean install
 it builds everything in sequence again.
 
 --
+
+But,
 ```groovy
 JMOABProject(G, build) *
 ```
@@ -356,7 +356,7 @@ should be built only.
 __Bazel__ (Google)
 
 * DAG in parallel
-* (distributed) cache of the task: input of the task.
+* distributed cache
 * scala support not mature
 * no resolution of version conflicts on external dependencies
 * no maven plugin equivalent ([~45 maven plugin jmoab](https://confluence.criteois.com/display/RP/Maven+plugins+and+their+Gradle+equivalent))

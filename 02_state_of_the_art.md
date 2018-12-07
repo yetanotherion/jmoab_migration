@@ -16,11 +16,11 @@ ecosystem, very much a means to an end, and seldom the focus of attention.
 --
 
 At least, when it's
-  * slow
+  * not maintainable
 
 --
 
-  * not maintainable
+  * slow
 
 ---
 # State of the art

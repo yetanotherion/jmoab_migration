@@ -22,9 +22,10 @@ First try:
 
 * Avoids big bang integration, distributes migration and validation.
 
+--
+
 But,
 
---
 * no cross-repo in IDE
 
 --

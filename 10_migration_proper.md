@@ -14,3 +14,43 @@
 * issues: scala compatibility issues, migrate existing tools (cuttle), IntelliJ integration, __classpath__ order.
 
 ---
+class: center
+# Industrialize migration
+
+
+![topo_sort](imgs/topo-sort.png)
+
+---
+
+class: center
+# Industrialize migration
+
+
+![conversion_change](imgs/conversion_change.png)
+
+---
+
+class: center
+# Industrialize migration
+
+
+![conversion_change_comments](imgs/conversion_change_comments.png)
+
+---
+
+
+class: center
+# Industrialize migration
+
+
+![conversion_please_diff_publish](imgs/conversion_please_diff_publish.png)
+
+---
+
+class: center
+# Industrialize migration
+
+
+![conversion_diff_first](imgs/conversion_diff_first.png)
+
+---

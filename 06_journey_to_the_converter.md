@@ -194,7 +194,7 @@ ext {
 
 --
 
-scalding-core version=?
+scalding-core version?
 
 ---
 
@@ -330,7 +330,7 @@ ext {
 
 --
 
-scalamacros version ?
+scalamacros version?
 
 ---
 

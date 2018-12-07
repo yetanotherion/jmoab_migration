@@ -1,7 +1,5 @@
 # Reached goals
 
---
-
 * Reduce the duration of JMOAB-build to less than 30 minutes.
 
 --

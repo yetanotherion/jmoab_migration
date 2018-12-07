@@ -1,3 +1,18 @@
+class: center
+# What is that?
+
+![jmoab_full](imgs/jmoab_full.png)
+
+---
+
+class: center
+# What is that?
+
+![jmoab_zoom](imgs/zoom.png)
+
+---
+
+
 # State of JMOAB with maven
 
 - March 2017

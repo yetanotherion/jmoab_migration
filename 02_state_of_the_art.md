@@ -360,7 +360,7 @@ __Bazel__ (Google)
 * (distributed) cache of the task: input of the task.
 * scala support not mature
 * no resolution of version conflicts on external dependencies
-* no maven plugin equivalent [~45 plugin in maven](https://confluence.criteois.com/display/RP/Maven+plugins+and+their+Gradle+equivalent)
+* no maven plugin equivalent ([~45 maven plugin jmoab](https://confluence.criteois.com/display/RP/Maven+plugins+and+their+Gradle+equivalent))
 
 
 __Pants, Buck__ (Twitter/Facebook):
@@ -371,10 +371,21 @@ and Facebook respectively. They have been modeled after Bazel, but their feature
 sets are different, so they aren't viable alternatives for us.
 ```
 
+---
+
+# State of the art
 __Bazel at Google__
 
-* Same as above +
+* Same as open source +
+
+--
+.side[![love](imgs/love.png)]
+
 * distributed execution of the DAG: hundreds of cpus available for your build.
+
+--
+
+  * [Your build in a datacenter](https://archive.fosdem.org/2018/schedule/event/datacenter_build/attachments/slides/2514/export/events/attachments/datacenter_build/slides/2514/bazel_fosdem_2018_final.pdf) (Uber, Twitter, TwoSigma + Google support)
 
 
 

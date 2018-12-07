@@ -398,9 +398,13 @@ __Sbt__
 * why not [mill](https://github.com/lihaoyi/mill)?
 
 __Gradle__
+
 * DAG in parallel
+
 * Distributed cache (if tasks support it)
+
 * Many maven plugin ported to gradle
+
 * Good community (Linkedin/Netflix/Android, backed by google on it)
 
 --
@@ -408,6 +412,7 @@ __Gradle__
 * Distributed builds?
 
 --
-  * [post in forum 2011/Sep](https://discuss.gradle.org/t/parallel-and-distributed-execution)
+
+  * [post in gradle forum 2011/Sep](https://discuss.gradle.org/t/parallel-and-distributed-execution)
   * first features may come in 2019 (in gradle enterprise?).
 ---

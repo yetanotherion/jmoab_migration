@@ -2,20 +2,20 @@
 
 - Complete new pipeline (JMOAB2)
   triggered for each JMOAB
+
     - conversion
---
-    - build
---
-    - test
---
-    - comparison of number of tests
---
-    - comparison of produced artifacts
---
-    - a dashboard following the progress
 
 --
-    - converstions with gradle ([@oehme](https://github.com/oehme), [@melix](https://github.com/melix), [@hansdockter](https://www.linkedin.com/in/hansdockter)
+    - build
+
+--
+    - test
+
+--
+    - comparison of number of tests / produced artifacts (dashboard)
+
+--
+    - conversations with gradle ([@oehme](https://github.com/oehme), [@melix](https://github.com/melix), [@hansdockter](https://www.linkedin.com/in/hansdockter))
 
 --
 

@@ -3,13 +3,16 @@
 --
 
 - The big bang thing doesn't look good
+
 - How to bootstrap things using what we have?
 
 --
 
 - Flying Bridge to Ann Arbor / Beers
 .side[![Michigan U.](http://imageproxy-app.marathon-par.central.criteo.preprod/img/img?m=2&w=257&h=600&debug=1&partner=-1&u=https%3A%2F%2Fsharing.wxyz.com%2Fsharewxyz%2Fphoto%2F2016%2F06%2F16%2FUofMlogo_1466109552834_40472428_ver1.0_640_480.jpg&r=0&dpa=0&ups=0&c=0&p=0&q=80&v=1&s=n16AC3vBesz90JWLnNz35jGS)]
+
 - An idea while there:
+
    - a BuildWithMavenPlugin
    - use the converted gradle projects
    - replace compilation steps with calls to Maven

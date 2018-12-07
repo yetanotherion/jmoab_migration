@@ -10,9 +10,8 @@
 
 --
 
-### Plugins!
-   - MoabWorkspacePlugin / MoabModulePlugin
-   - LibraryManagementPlugin / DelayedPlugin (Bis)
+### More plugins!
+   - MoabModulePlugin
    - BfsPlugin
    - SeedsPlugin
 

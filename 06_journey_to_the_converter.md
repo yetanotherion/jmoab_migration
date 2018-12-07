@@ -60,8 +60,7 @@ of what is done automatically. Choices:
 * Hope we can fix the remaining manually.
 
 ---
-
-# Conversion example
+# Conversion examples
 
 ```groovy
 /* Plugins */
@@ -83,7 +82,7 @@ ext {
 
 ---
 
-# Conversion example
+# Conversion examples
 
 ```groovy
 /* Plugin Management */
@@ -110,7 +109,7 @@ moabDependencies {
 }```
 
 ---
-# Conversion example
+# Conversion examples
 
 ```groovy
 /* External dependencies */
@@ -139,4 +138,185 @@ shadowJar {
     }
 }
 ```
+
+---
+
+# Conversion examples
+repo/parquet-macros/pom.xml
+
+```xml
+<parent>
+  ...
+  <artifactId>bdp-parent</artifactId> <!-- repo/pom.xml -->
+  ...
+</parent>
+<dependencies>
+    <!-- scala -->
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-reflect</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-library</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.twitter</groupId>
+      <artifactId>scalding-core_${scala.version.short}</artifactId>
+    </dependency>
+    ...
+```
+
+---
+
+# Conversion examples
+repo/parquet-macros/parent.gradle
+
+```groovy
+apply from: repoFile('parent.gradle') // scala_version_short = "2.11"
+
+dependencies {
+    compile libraries["org.scala-lang:scala-reflect"]
+    compile libraries["org.scala-lang:scala-library"]
+    compile libraries["com.twitter:scalding-core_${scala_version_short}"]
+    ...
+}
+```
+
+--
+
+```groovy
+apply from: repoFile('parquet-macros/parent.gradle')
+ext {
+   scala_version_short = "2.12"
+}
+```
+
+--
+
+scalding-core version=?
+
+---
+
+# Conversion examples
+repo/parquet-macros/parent.gradle
+
+```groovy
+delayed {
+    dependencies {
+        compile libraries["org.scala-lang:scala-reflect"]
+        compile libraries["org.scala-lang:scala-library"]
+        compile libraries["com.twitter:scalding-core_${scala_version_short}"]
+    }
+}
+```
+
+---
+
+# Conversion examples
+
+repo/pom.xml
+```xml
+<groupId>com.criteo.hadoop</groupId>
+<artifactId>bdp-parent</artifactId>
+ <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>net.alchim31.maven</groupId>
+          <artifactId>scala-maven-plugin</artifactId>
+          <configuration>
+            <recompileMode>all</recompileMode>
+            <args>
+              <arg>-target:jvm-1.7</arg>
+            </args>
+            <javacArgs>
+              <javacArg>-source</javacArg>
+              <javacArg>1.7</javacArg>
+              <javacArg>-target</javacArg>
+              <javacArg>1.7</javacArg>
+            </javacArgs>
+          </configuration>
+          ...
+```
+---
+
+# Conversion examples
+
+repo/scala.gradle
+```groovy
+compileScala.scalaCompileOptions.additionalParameters = ["-target:jvm-1.7"]
+compileTestScala.scalaCompileOptions.additionalParameters = ["-target:jvm-1.7"]
+```
+
+---
+
+# Conversion examples
+repo/parquet-macros/pom.xml
+
+```xml
+<parent>
+  ...
+  <artifactId>bdp-parent</artifactId>
+  ...
+</parent>
+ <artifactId>parquet-macros-parent</artifactId>
+ <build>
+   <pluginManagement>
+     <plugins>
+       <plugin>
+         <groupId>net.alchim31.maven</groupId>
+         <artifactId>scala-maven-plugin</artifactId>
+         <configuration>
+           <compilerPlugins>
+             <compilerPlugin>
+               <groupId>org.scalamacros</groupId>
+               <artifactId>paradise_${scala.version}</artifactId>
+               <version>2.1.0</version>
+             </compilerPlugin>
+           </compilerPlugins>
+         </configuration>
+         ...
+```
+---
+
+
+# Conversion examples
+
+repo/parquet-macros/scala.gradle
+```groovy
+/* from pluginManagement of repo/parquet-macros/pom.xml */
+configurations {
+    scalaPlugin {
+        transitive = false
+    }
+}
+
+dependencies {
+    scalaPlugin "org.scalamacros:paradise_${scala_version}:2.1.0"
+}
+String scalaPluginOption = "-Xplugin:${configurations.scalaPlugin.singleFile.path}"
+
+
+def additionalParameters = ["-target:jvm-1.7", // from pluginManagement of repo/pom.xml
+                            scalaPluginOption]
+
+compileScala.scalaCompileOptions.additionalParameters = additionalParameters
+compileTestScala.scalaCompileOptions.additionalParameters = additionalParameters
+```
+---
+
+# Conversion examples
+repo/langoustine-run/build.gradle:
+
+```groovy
+apply from: repoFile('scala.gradle')
+```
+
+repo/parquet-macros/parquet-macros_2.11/build.gradle:
+
+```groovy
+apply from: repoFile('parquet-macros/scala.gradle')
+```
+
 ---

@@ -402,7 +402,12 @@ __Gradle__
 * Distributed cache (if tasks support it)
 * Many maven plugin ported to gradle
 * Good community (Linkedin/Netflix/Android, backed by google on it)
-* Distributed builds
+
+--
+
+* Distributed builds?
+
+--
   * [post in forum 2011/Sep](https://discuss.gradle.org/t/parallel-and-distributed-execution)
   * first features may come in 2019 (in gradle enterprise?).
 ---

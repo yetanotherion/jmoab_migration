@@ -52,9 +52,12 @@ of what is done automatically. Choices:
 
 --
 * Created custom plugins:
-  * LibraryManagementPlugin / `libraries`: dependency management
-  * DelayedPlugin / `delayed`: evaluate expressions lazily
-  * MoabWorkspacePlugin / `moabDependencies`: Gradle [composite builds](https://docs.gradle.org/current/userguide/composite_builds.html)
+  * LibraryManagementPlugin / `libraries`: simple dependency management.
+      * [springsDepMgmt](https://github.com/spring-gradle-plugins/dependency-management-plugin) is more expressive but slower
+  * DelayedPlugin / `delayed`:
+      * evaluate expressions lazily ([GRADLE-1080](https://github.com/gradle/gradle/issues/1080))
+  * MoabWorkspacePlugin / `moabDependencies`:
+      * Gradle [composite builds](https://docs.gradle.org/current/userguide/composite_builds.html)
      not expressive enough for the jmoab [RP-3174](https://jira.criteois.com/browse/RP-3174)
 
 ---

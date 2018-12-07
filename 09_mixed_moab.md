@@ -69,7 +69,7 @@ class: center
 # Mixed moab: a Ann Arbor story part II
 
 --
-- JMOAB 1.6 works great on CI
+- JMOAB 1.6 works great on CI, but does not work with converted projects using protobuf.
 - Impossible to use for devs
 - Idea: why not parse the poms directly from gradle?
 

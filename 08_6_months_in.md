@@ -15,6 +15,9 @@
     - a dashboard following the progress
 
 --
+    - converstions with gradle ([@oehme](https://github.com/oehme), [@melix](https://github.com/melix), [@hansdockter](https://www.linkedin.com/in/hansdockter)
+
+--
 
 - December 2017: We start "plateauing" at **80%** conversion
 

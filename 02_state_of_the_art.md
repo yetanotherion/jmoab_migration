@@ -347,8 +347,7 @@ it builds everything in sequence again.
 JMOABProject(G, build) *
 ```
 
-should be built
-only (Incremental builds).
+should be built only.
 
 ---
 # State of the art
@@ -399,8 +398,11 @@ __Sbt__
 * why not [mill](https://github.com/lihaoyi/mill)?
 
 __Gradle__
-* DAG in parallel (plan to go distributed according to our talks with the CEO of gradle)
+* DAG in parallel
 * Distributed cache (if tasks support it)
 * Many maven plugin ported to gradle
-* Good community (Android, backed by google on it)
+* Good community (Linkedin/Netflix/Android, backed by google on it)
+* Distributed builds
+  * [post in forum 2011/Sep](https://discuss.gradle.org/t/parallel-and-distributed-execution)
+  * first features may come in 2019 (in gradle enterprise?).
 ---

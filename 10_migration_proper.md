@@ -26,7 +26,7 @@ class: center
 # Industrialize migration
 
 
-![conversion_change](imgs/conversion_change.png)
+![conversion_change_comments](imgs/conversion_change_comments.png)
 
 ---
 
@@ -34,7 +34,7 @@ class: center
 # Industrialize migration
 
 
-![conversion_change_comments](imgs/conversion_change_comments.png)
+![conversion_change](imgs/conversion_change.png)
 
 ---
 

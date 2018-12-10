@@ -332,7 +332,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-In the next build changes are only done in G's files.
+In the next build, changes are only done in G's files.
 With the standard
 ```shell
 $ mvn clean install
@@ -342,12 +342,21 @@ it builds everything in sequence again.
 
 --
 
-But,
+But, only G should be built.
 ```groovy
-JMOABProject(G, build) *
+JMOABProject(A, build)
+├── JMOABProject(B, build)
+│   ├── JMOABProject(B, test)
+│   └── JMOABProject(E, build)
+├── JMOABProject(A, test)
+├── JMOABProject(C, build)
+│   └── JMOABProject(G, build) *
+└── JMOABProject(D, build)
+    ├── JMOABProject(D, test)
+    └── JMOABProject(F, build)
 ```
 
-should be built only.
+
 
 ---
 # State of the art
@@ -356,11 +365,20 @@ should be built only.
 __Bazel__ (Google)
 
 * DAG in parallel
+
+--
 * distributed cache
+
+--
 * scala support not mature
+
+--
 * no resolution of version conflicts on external dependencies
+
+--
 * no maven plugin equivalent ([~45 maven plugin jmoab](https://confluence.criteois.com/display/RP/Maven+plugins+and+their+Gradle+equivalent))
 
+--
 
 __Pants, Buck__ (Twitter/Facebook):
 
@@ -373,9 +391,9 @@ sets are different, so they aren't viable alternatives for us.
 ---
 
 # State of the art
-__Bazel at Google__
+__Blaze at Google__
 
-* Same as open source +
+* Same as Bazel +
 
 --
 .side[![love](imgs/love.png)]
@@ -403,7 +421,7 @@ __Gradle__
 
 * Distributed cache (if tasks support it)
 
-* Many maven plugin ported to gradle
+* Many maven plugins ported to gradle
 
 * Good community (Linkedin/Netflix/Android, backed by google on it)
 

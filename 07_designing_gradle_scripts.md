@@ -316,5 +316,8 @@ ext {
 
 apply from: repoFile('parquet-macros/scala.gradle')
 ```
+???
+
+To Ion next slide.
 
 ---

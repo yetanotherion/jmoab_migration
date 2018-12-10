@@ -66,7 +66,7 @@ class: center
 ![Performance](imgs/JMOABPerf2.png)
 
 ---
-# Mixed moab: a Ann Arbor story part II
+# Mixed moab: a Ann Arbor story part II: JMOAB 1.8
 
 --
 - JMOAB 1.6 works great on CI, but does not work with converted projects using protobuf.

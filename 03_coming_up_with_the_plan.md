@@ -14,8 +14,8 @@
 --
  * Pave the way for later improvements (i.e. choose a build tool which can be easily customized and is actively maintained)
 
----
-
+???
+To manu
 ---
 # Coming up with the plan
 .side[![using merely spoons](https://media.giphy.com/media/Is5D12oVRKpMY/giphy.gif)]

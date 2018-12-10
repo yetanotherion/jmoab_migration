@@ -25,6 +25,7 @@
 
 .center[![Hmmm](imgs/chess.jpg)]
 ???
+To Ion
 Pretty bumed.
 January, keep working while trying to come up with alternatives.
 What's better than fresh (literally) air?

@@ -57,7 +57,7 @@ The one after the jump does.
 --
 
 - June 2018:
-   - JMOAB 1.6 - implementing a gradle cache on maven tasks
+   - JMOAB 1.6 - implementing a distributed gradle cache on maven tasks
    - June 15th: WOOT WOOT mail: presubmit faster
 
 ---

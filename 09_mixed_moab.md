@@ -36,7 +36,7 @@
 ---
 class: center
 # An image = a thousand words
-![Performance](imgs/JMOABPerf1.png)
+![Performance](imgs/jmoab_perf_one.png)
 ???
 The performance before the jump doesn't include the packaging step.
 The one after the jump does.
@@ -63,7 +63,7 @@ The one after the jump does.
 ---
 class: center
 # JMOAB 1.6
-![Performance](imgs/JMOABPerf2.png)
+![Performance](imgs/jmoab_perf_two.png)
 
 ---
 # Mixed moab: a Ann Arbor story part II: JMOAB 1.8

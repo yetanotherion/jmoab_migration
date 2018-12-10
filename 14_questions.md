@@ -3,7 +3,7 @@
 * Reduce the duration of JMOAB-build to less than 30 minutes.
 
 --
-.red[NO]
+.green[YES].red[?]
 
 --
 
@@ -11,6 +11,9 @@
 
 --
 .red[NO]
+
+--
+  * (95pt .green[YES])
 
 --
 

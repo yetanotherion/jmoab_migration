@@ -417,7 +417,7 @@ __Sbt__
 
 __Gradle__
 
-* DAG in parallel
+* DAG of tasks executed in parallel
 
 * Distributed cache (if tasks support it)
 

@@ -433,4 +433,13 @@ __Gradle__
 
   * [post in gradle forum 2011/Sep](https://discuss.gradle.org/t/parallel-and-distributed-execution)
   * first features may come in 2019 (in gradle enterprise?).
+
+---
+# The choice
+
+|                 | DAG //         | Incremental Build | Distributed cache | Distributed build | Version conflict resolution | Maven plugins converted |
+|-----------------|:--------------:|:-----------------:|:-----------------:|:-----------------:|:---------------------------:|:-----------------------:|
+| Blaze at Google | *              | *                 | *                 | *                 |                             |                         |
+| Gradle          | *              | Per task          | Per task          |                   | *                           | *                       |
+
 ---

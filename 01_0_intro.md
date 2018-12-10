@@ -18,3 +18,13 @@ class: center, middle
 - Jon Alberdi
    - Build Services Team
 ---
+# Agenda
+
+- Replacing Maven
+- Coming up with the plan
+- Design choices
+- After 6 months: a crisis of faith
+- Full scale migration
+- Lessons learned
+---
+

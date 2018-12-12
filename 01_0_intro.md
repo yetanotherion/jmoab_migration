@@ -6,25 +6,42 @@ class: center, middle
 
 # About us
 
-.side[
-![Manu](imgs/Manu.JPG)
+- The Build Services team
 
-![Jon](imgs/Jon.JPG)
-]
+  - .side[![Jon](imgs/j.alberdi.jpg)] Jon Alberdi
+  - .side[![Clément](imgs/c.boone.png)] Clément
+  - .side[![Patrick](imgs/p.bruneton.jpg)] Patrick
+  - .side[![Emmanuel](imgs/e.debanne.jpg)] Emmanuel
+  - .side[![Manu](imgs/e.guerin.jpg)] Manu
+  - .side[![Florian](imgs/f.lherbette.jpg)] Florian
 
-- Emmanuel Guérin
-    - Build Services Team
-
-- Jon Alberdi
-   - Build Services Team
 ---
 # Agenda
 
-- Replacing Maven
-- Coming up with the plan
-- Design choices
-- After 6 months: a crisis of faith
-- Full scale migration
+- **March-July 2017**: Coming up with the plan
+
+- **August-December 2017**: Going for the big bang
+
+- **December 2017**: a crisis of faith
+
+- **January-June 2018**: new ideas
+
+- **July 2018 - ?**: full scale migration
+
+- Lessons learned
+---
+# Agenda
+
+- .red[**March-July 2017**: Coming up with the plan]
+
+- **August-December 2017**: Going for the big bang
+
+- **December 2017**: a crisis of faith
+
+- **January-June 2018**: new ideas
+
+- **July 2018 - ?**: full scale migration
+
 - Lessons learned
 ---
 

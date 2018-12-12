@@ -35,7 +35,7 @@ At least, when it's
 ---
 # State of the art
 
-Let's have the following DAG of tasks.
+Let's have the following DAG (Directed Acyclic Graph) of tasks.
 
 ```groovy
 JMOABProject(A, build)
@@ -332,7 +332,7 @@ JMOABProject(A, build)
 ---
 # State of the art
 
-In the next build, changes are only done in G's files.
+In the next build, changes are only done in project `G`'s files.
 With the standard
 ```shell
 $ mvn clean install
@@ -342,7 +342,7 @@ it builds everything in sequence again.
 
 --
 
-But, only G should be built.
+But, only `G` should be built.
 ```groovy
 JMOABProject(A, build)
 ├── JMOABProject(B, build)
@@ -417,22 +417,17 @@ __Sbt__
 
 __Gradle__
 
-* DAG of tasks executed in parallel
-
-* Distributed cache (if tasks support it)
-
-* Many maven plugins ported to gradle
-
-* Good community (Linkedin/Netflix/Android, backed by google on it)
-
+- DAG of tasks executed in parallel
+- Distributed cache (if tasks support it)
+- Many maven plugins ported to gradle
+- Good community (Linkedin/Netflix/Android, backed by google on it)
 --
 
-* Distributed builds?
-
+- Distributed builds?
 --
 
-  * [post in gradle forum 2011/Sep](https://discuss.gradle.org/t/parallel-and-distributed-execution)
-  * first features may come in 2019 (in gradle enterprise?).
+  - [post in gradle forum 2011/Sep](https://discuss.gradle.org/t/parallel-and-distributed-execution)
+  - first features may come in 2019 (in gradle enterprise?).
 
 ---
 # The choice

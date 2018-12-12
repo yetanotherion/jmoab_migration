@@ -1,3 +1,18 @@
+# Agenda
+
+- **March-July 2017**: Coming up with the plan
+
+- .red[**August-December 2017**: Going for the big bang]
+
+- **December 2017**: a crisis of faith
+
+- **January-June 2018**: new ideas
+
+- **July 2018 - ?**: full scale migration
+
+- Lessons learned
+---
+
 # Conversion issues (Required?)
 
 __Four main features to factorize build logic in Maven to translate__:

@@ -1,6 +1,11 @@
 
 class: center, middle
-# JMOAB: from mvn to gradle
+# Maven to Gradle: story of a migration
+
+<div style="height:5em">&nbsp;</div>
+
+ .side[Jon Alberdi].left[Emmanuel Guérin]
+
 
 ---
 

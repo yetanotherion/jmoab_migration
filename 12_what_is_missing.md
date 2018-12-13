@@ -1,17 +1,3 @@
-# Agenda
-
-- **March-July 2017**: Coming up with the plan
-
-- **August-December 2017**: Going for the big bang
-
-- **December 2017**: a crisis of faith
-
-- **January-June 2018**: new ideas
-
-- **July 2018 - ?**: full scale migration
-
-- .red[Lessons learned]
----
 .side[![Now what?](imgs/finding-nemo-now-what.jpg)]
 # What is missing
 
@@ -26,14 +12,6 @@
    - the result of a semi-automated conversion
    - versioning of external dependencies is still tricky
    - scala migration should be far easier (in the build scripts)
+   - distributed cache should be for everyone (in read mode)
 
----
-- What we learned about our code:
-   - uber jars and package generation is a mess:
-      - no real common knowledge on what's in what's out
-      - in most cases, just copying what works
-   - class relocation happens quite often
-
-???
-To Manu
 ---

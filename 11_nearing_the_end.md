@@ -3,8 +3,9 @@
 - What has changed:
    - Criteo code gained some more weight:
       - ~~239~~ 304 repositories
-      - ~~652~~ 1127 projects (scala double build)
-   - 70% of projects migrated
+      - ~~652~~ 953 projects
+   - 74% of repositories migrated
+--
 - What about our goals?
    - Reduce the duration of JMOAB-build to less than 30 minutes.
 
@@ -32,4 +33,5 @@
       - if gradle will support distributed builds <span class="green">YES</span>
 --
       - else: gradle to bazel? <div class="side">(uber: [okbuck](https://github.com/uber/okbuck)) ![no_kidding](imgs/no_kidding.jpg)</div>
+
 ---

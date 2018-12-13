@@ -1,3 +1,18 @@
+# Agenda
+
+- **March-July 2017**: Coming up with the plan
+
+- **August-December 2017**: Going for the big bang
+
+- .red[**December 2017**: a crisis of faith]
+
+- **January-June 2018**: new ideas
+
+- **July 2018 - ?**: full scale migration
+
+- Lessons learned
+---
+
 # 6 months in
 
 

@@ -24,6 +24,9 @@ __Evaluation of expressions__
 |--------|:-------------:|:-----------------------------:|
 | Gradle | Not supported   | Not supported ([GRADLE-1080](https://github.com/gradle/gradle/issues/1080))                     |
 
+???
+effective pom = the POM computed by maven by aggregating all parent poms and executing profiles
+
 --
 
 __Classpath computations__
@@ -35,7 +38,7 @@ __Classpath computations__
 ---
 # Conversion issues
 
-Being semantically equivalent is very expensive. We choose to limit the scope
+Being semantically equivalent is very expensive. We chose to limit the scope
 of what is done automatically
 
 __Build logic factorization__
@@ -56,7 +59,7 @@ __Evaluation of expressions__
 
 |        | effective pom | lazy evaluation |
 |--------|:-------------:|:-----------------------------:|
-| Gradle | DONE          | DONE calling  DelayedPlugin / `delayed` when necessary |
+| Gradle | __DONE__          | __DONE__ calling  DelayedPlugin / `delayed` when necessary |
 
 
 --
@@ -64,7 +67,7 @@ __Classpath computations__
 
 |        | Set scope of transitive dependencies | provided | exclude | Version conflict solver | BOM import (chd-root/aws) |
 |--------|:------------------------------------:|:-----------------------------:|
-| Gradle | Heuristics                           | Use [spring's plugin](https://github.com/spring-gradle-plugins/propdeps-plugin) | NOT DONE | 2 pass conversion | Heuristic until gradle 4.6
+| Gradle | Heuristics                           | Use [spring's plugin](https://github.com/spring-gradle-plugins/propdeps-plugin) | __NOT DONE__ | 2 pass conversion | Heuristic until gradle 4.6
 
 
 ---

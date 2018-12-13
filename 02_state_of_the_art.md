@@ -364,19 +364,25 @@ JMOABProject(A, build)
 
 __Bazel__ (Google)
 
-* DAG in parallel
+* good
+  * DAG executed in parallel
 
 --
-* distributed cache
+  * distributed cache
 
 --
-* scala support not mature
+  * enforces incremental build
 
 --
-* no resolution of version conflicts on external dependencies
+* but,
+
+  * scala support not mature
 
 --
-* no maven plugin equivalent ([~45 maven plugin jmoab](https://confluence.criteois.com/display/RP/Maven+plugins+and+their+Gradle+equivalent))
+  * no resolution of version conflicts on external dependencies
+
+--
+  * no maven plugin equivalent ([~45 maven plugin jmoab](https://confluence.criteois.com/display/RP/Maven+plugins+and+their+Gradle+equivalent))
 
 --
 
@@ -421,6 +427,9 @@ __Gradle__
 - Distributed cache (if tasks support it)
 - Many maven plugins ported to gradle
 - Good community (Linkedin/Netflix/Android, backed by google on it)
+???
+mill may not be mature enough
+
 --
 
 - Distributed builds?

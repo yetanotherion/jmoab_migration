@@ -16,7 +16,7 @@ Idea:
 --
 * must automate translation of plugins:
    * 47 plugins used in the JMOAB
-   * with converting 28 only, heavy lifting performed (other plugins scarcely used).
+   * Among 47, 28 to convert as others are scarcely used.
 
 --
 

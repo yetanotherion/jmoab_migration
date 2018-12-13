@@ -70,7 +70,8 @@ The one after the jump does.
 --
 
 - June 2018:
-   - JMOAB 1.6 - implementing a distributed gradle cache on maven tasks
+   - .side[![parallel pipeline](imgs/newPipeline.png)]Switch to parallel pipeline
+   - implementing a distributed gradle cache on maven tasks
    - June 15th: WOOT WOOT mail: presubmit faster
 
 ---

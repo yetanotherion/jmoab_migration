@@ -28,3 +28,12 @@
    - scala migration should be far easier (in the build scripts)
 
 ---
+- What we learned about our code:
+   - uber jars and package generation is a mess:
+      - no real common knowledge on what's in what's out
+      - in most cases, just copying what works
+   - class relocation happens quite often
+
+???
+To Manu
+---

@@ -5,15 +5,31 @@
       - ~~239~~ 304 repositories
       - ~~652~~ 1127 projects (scala double build)
    - 70% of projects migrated
-   - Build times:
-      - a new MOAB each 30 min
-      - presubmit on whole moab ~ 90 min
-- What we learned about our code:
-   - uber jars and package generation is a mess:
-      - no real common knowledge on what's in what's out
-      - in most cases, just copying what works
-   - class relocation happens quite often
+- What about our goals?
+   - Reduce the duration of JMOAB-build to less than 30 minutes.
 
-???
-To Manu
+--
+.green[YES]
+--
+
+   - Reduce the duration of JMOAB-pre-submit to less than 30 minutes (worst case scenario).
+
+--
+.red[NO]
+--
+
+      - 95pt almost <span class="green">YES</span>
+--
+   - Make JMOAB-build and JMOAB-pre-submit scale with respect to the code base size.
+
+--
+.green[YES]
+--
+
+   - Pave the way for later improvements (i.e. choose a build tool which can be easily customized and is actively maintained)
+--
+
+      - if gradle will support distributed builds <span class="green">YES</span>
+--
+      - else: gradle to bazel? <div class="side">(uber: [okbuck](https://github.com/uber/okbuck)) ![no_kidding](imgs/no_kidding.jpg)</div>
 ---

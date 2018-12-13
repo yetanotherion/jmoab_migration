@@ -4,7 +4,7 @@ class: center, middle
 
 <div style="height:5em">&nbsp;</div>
 
- .side[Jon Alberdi].left[Emmanuel Guérin]
+ .side[Ion Alberdi].left[Emmanuel Guérin]
 
 
 ---

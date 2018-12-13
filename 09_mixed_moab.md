@@ -48,7 +48,7 @@
 
 ---
 class: center
-# An image = a thousand words
+# JMOAB 1.5
 ![Performance](imgs/jmoab_perf_one.png)
 ???
 The performance before the jump doesn't include the packaging step.
@@ -60,14 +60,13 @@ The one after the jump does.
 - We have a complete gradle pipeline
 - Build times are better
 - We can start migration using the converter:
+--
+
+   - May 2018: [Perpetuo](http://review.criteois.lan/#/c/346423/) is the first gradle repository
 
 
 --
-
-- May 2018: [Perpetuo](http://review.criteois.lan/#/c/346423/) is the first gradle repository
-
-
---
+# JMOAB 1.6
 
 - June 2018:
    - .side[![parallel pipeline](imgs/newPipeline.png)]Switch to parallel pipeline

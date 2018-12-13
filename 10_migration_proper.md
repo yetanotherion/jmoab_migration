@@ -63,7 +63,7 @@ class: center
 # Industrialize migration
 
 
-![conversion_change](imgs/conversion_change.png)
+![change_minus_one](imgs/change_minus_one.jpg)
 
 ---
 
@@ -72,7 +72,7 @@ class: center
 # Industrialize migration
 
 
-![conversion_please_diff_publish](imgs/conversion_please_diff_publish.png)
+![change_fix_minus_one_please_publish_please_diff](imgs/change_fix_minus_one_please_publish_please_diff.jpg)
 
 ---
 
@@ -80,6 +80,6 @@ class: center
 # Industrialize migration
 
 
-![conversion_diff_first](imgs/conversion_diff_first.png)
+![diff_zoomed](imgs/diff_zoomed.jpg)
 
 ---

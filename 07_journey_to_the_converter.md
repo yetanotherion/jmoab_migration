@@ -1,27 +1,103 @@
-# Designing for gradle
+# Conversion issues
 
-### Features:
-   - should be reminiscent of existing maven toolkit
-   - auto discovery of projects
-   - partial checkout (developer use case)
-   - support generation from converter
-   - versioned inside the MOAB
+__Build logic factorization__
 
+
+|        | properties | dependencyManagement | pluginManagement | profiles |
+|--------|:----------:|:--------------------:|:----------------:|:--------:|
+| Gradle | ext        | [spring provides a plugin](https://github.com/spring-gradle-plugins/dependency-management-plugin) but performance cost                | Not supported             | Not supported     |
 
 --
 
-### More plugins!
-   - MoabModulePlugin
-   - BfsPlugin
-   - SeedsPlugin
+__Dynamic workspace__
 
-???
-- BfsPlugin: tooling for managing workspace (init, checkout, refresh)
-- MoabWorkspacePlugin: tooling for auto discovery of projects, partial checkouts, publication
-- LibraryManagementPlugin/DelayedPlugin: maven like dependency constraints declaration for easier conversion
-- SeedsPlugin: easily run tasks on client projects
+  * Should build when dependencies are checkout or not
+  * Gradle's [composite builds](https://docs.gradle.org/current/userguide/composite_builds.html)
+     not expressive enough yet for the jmoab [RP-3174](https://jira.criteois.com/browse/RP-3174)
 
 ---
+# Conversion issues
+
+__Evaluation of expressions__
+
+|        | effective pom | lazy evaluation |
+|--------|:-------------:|:-----------------------------:|
+| Gradle | Not supported   | Not supported ([GRADLE-1080](https://github.com/gradle/gradle/issues/1080))                     |
+
+--
+
+__Classpath computations__
+
+|        | Set scope of transitive dependencies | provided | exclude | Version conflict solver | BOM import (chd-root/aws) |
+|--------|:------------------------------------:|:-----------------------------:|
+| Gradle | Not supported                        | [spring provides a plugin](https://github.com/spring-gradle-plugins/propdeps-plugin), but different semantics | Different semantics [GRADLE-1473](https://github.com/gradle/gradle/issues/1473) | Different algorithm | Supported in a version that appeared during the migration
+
+---
+# Conversion issues
+
+Being semantically equivalent is very expensive. We choose to limit the scope
+of what is done automatically
+
+__Build logic factorization__
+
+|        | properties | dependencyManagement | pluginManagement | profiles |
+|--------|:----------:|:--------------------:|:----------------:|:--------:|
+| Gradle | ext        | LibraryManagementPlugin / `libraries` ([springsDepMgmt](https://github.com/spring-gradle-plugins/dependency-management-plugin) is more expressive but slower) | Compute all used effective poms, translate in external gradle files (harder than expected due to [GRADLE-1262](https://github.com/gradle/gradle/issues/1262))             | Support CI use case only (no dynamic profile)  |
+--
+
+__Dynamic workspace__
+
+  * MoabWorkspacePlugin / `moabDependencies`
+
+---
+# Conversion issues
+
+__Evaluation of expressions__
+
+|        | effective pom | lazy evaluation |
+|--------|:-------------:|:-----------------------------:|
+| Gradle | DONE          | DONE calling  DelayedPlugin / `delayed` when necessary |
+
+
+--
+__Classpath computations__
+
+|        | Set scope of transitive dependencies | provided | exclude | Version conflict solver | BOM import (chd-root/aws) |
+|--------|:------------------------------------:|:-----------------------------:|
+| Gradle | Heuristics                           | Use [spring's plugin](https://github.com/spring-gradle-plugins/propdeps-plugin) | NOT DONE | 2 pass conversion | Heuristic until gradle 4.6
+
+
+---
+
+# Conversion examples: a generated build.gradle
+```xml
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.criteo.pom</groupId>
+    <artifactId>cuttle-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../../../../parent-poms/parent-poms/cuttle-parent/pom.xml</relativePath>
+  </parent>
+  <groupId>com.criteo.xdrichtimeline</groupId>
+  <artifactId>xdrichtimeline-cuttle</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <properties>
+    <!-- Main -->
+    <app.main.class>com.criteo.hadoop.prospecting.cuttle.Application</app.main.class>
+  </properties>
+  <dependencies>
+    <!-- Internal utils shared between cuttles -->
+    <dependency>
+      <groupId>com.criteo.xdrichtimeline</groupId>
+      <artifactId>xdrichtimeline-cuttle-utils</artifactId>
+    </dependency>
+...
+```
+---
+
 # Conversion examples: a generated build.gradle
 
 ```groovy

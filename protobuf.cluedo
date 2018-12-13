@@ -19,9 +19,9 @@ Bytecode:
 at com.google.devtools.cloudtrace.v2.TraceProto.<clinit>(TraceProto.java:198)
 ...
 ```
-
 --
 ```groovy
 align protobuf versions
 ```
+
 ---

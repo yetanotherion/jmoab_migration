@@ -179,8 +179,5 @@ shadowJar {
     }
 }
 ```
-???
-
-To Ion next slide.
 
 ---

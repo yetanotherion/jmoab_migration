@@ -11,6 +11,9 @@
 - **July 2018 - ?**: full scale migration
 
 - Lessons learned
+
+???
+To Manu
 ---
 
 # 6 months in

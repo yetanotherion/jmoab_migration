@@ -1,10 +1,16 @@
 # Nearing the end
 
+???
+To Manu
+
+--
 - What has changed:
    - Criteo code gained some more weight:
       - ~~239~~ 304 repositories
       - ~~652~~ 953 projects
    - 74% of repositories migrated
+
+
 --
 
 - What about our goals?

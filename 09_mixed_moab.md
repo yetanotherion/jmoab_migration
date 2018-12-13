@@ -82,6 +82,9 @@ class: center
 ---
 # Mixed moab: a Ann Arbor story part II: JMOAB 1.7
 
+???
+To Jon
+
 --
 - JMOAB 1.6 works great on CI, but does not work with converted projects using protobuf.
 - Impossible to use for devs
@@ -90,6 +93,7 @@ class: center
 
 ???
 It is a problem that devs can't use a mixed workspace because that means that all repos they work on must be converted before they can switch.
+
 
 --
 

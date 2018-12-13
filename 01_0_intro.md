@@ -13,7 +13,7 @@ class: center, middle
 
 - The Build Services team
 
-  - .side[![Jon](imgs/j.alberdi.jpg)] Ion
+  - .side[![Ion](imgs/j.alberdi.jpg)] Ion
   - .side[![Clément](imgs/c.boone.png)] Clément
   - .side[![Patrick](imgs/p.bruneton.jpg)] Patrick
   - .side[![Emmanuel](imgs/e.debanne.jpg)] Emmanuel

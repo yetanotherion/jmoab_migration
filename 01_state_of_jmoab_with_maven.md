@@ -61,5 +61,5 @@ class: center
 - .red[poms are not maintainable]
 
 ???
-To Jon
+To Ion
 ---

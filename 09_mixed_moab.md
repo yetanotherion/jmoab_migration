@@ -83,7 +83,7 @@ class: center
 # Mixed moab: a Ann Arbor story part II: JMOAB 1.7
 
 ???
-To Jon
+To Ion
 
 --
 - JMOAB 1.6 works great on CI, but does not work with converted projects using protobuf.

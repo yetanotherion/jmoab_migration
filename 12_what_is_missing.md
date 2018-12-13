@@ -14,4 +14,9 @@
    - scala migration should be far easier (in the build scripts)
    - distributed cache should be for everyone (in read mode)
 
+
+--
+
+- After the migration, improvements to be done to factorize DSL code
+
 ---

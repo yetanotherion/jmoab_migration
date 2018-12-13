@@ -16,27 +16,19 @@
 # 6 months in
 
 - Add features in converter
-
 - Complete new pipeline (JMOAB2)
   triggered for each JMOAB
-
     - conversion
-
 --
     - build
-
 --
     - test
-
 --
     - comparison of number of tests / produced artifacts (dashboard)
-
 --
     - conversations with gradle ([@oehme](https://github.com/oehme), [@melix](https://github.com/melix), [@hansdockter](https://www.linkedin.com/in/hansdockter))
-
 --
-
-- December 2017: We start "plateauing" at **80%** conversion
+- December 2017: We start "plateauing" at **80%** on automatic conversion, should we push on?
 
 --
 

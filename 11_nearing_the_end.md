@@ -6,6 +6,7 @@
       - ~~652~~ 953 projects
    - 74% of repositories migrated
 --
+
 - What about our goals?
    - Reduce the duration of JMOAB-build to less than 30 minutes.
 

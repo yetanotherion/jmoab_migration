@@ -14,17 +14,25 @@
 ---
 # Lessons learned
 
-- If you think a one shot deal is possible, you've not searched enough for the alternative
+- If you think a one shot deal is possible, you've not searched long enough for the alternative
+
+--
 - What we learned about our code:
+
+--
    - uber jars and package generation is a mess:
       - difficult to know what should be in and what should be out
       - exclusion logic often duplicated in many projects
+--
    - class relocation happens quite often
+
+
+--
+
 - Look for better governance in build scripts
    - know your build
    - prevent technical debt
 
-.center[![classroom](imgs/classroom.jpg)]
 ???
 - in maven pom files, the logic behind dependency exclusion or relocation is mostly unknown to anyone, making it very hard to change.
 - Build files can have very expensive tech-debt

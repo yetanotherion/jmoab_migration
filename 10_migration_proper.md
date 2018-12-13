@@ -31,7 +31,7 @@
 
 --
 * Maven/Gradle comparison tooling:
-  * diff artifacts
+  * please diff
   * test results/numbers ("what? 0 tests in my maven project? I was SURE I had some")
   * please publish
   * findJars

@@ -29,7 +29,7 @@ __Dependency management__:
 * No provided in gradle [spring provides a plugin](https://github.com/spring-gradle-plugins/propdeps-plugin),
   but semantics are different (TODO find link)
 * Different algorithm to solve transitive dependencies version conficts.
-* Need to support BOM import
+* Need to support BOM import (cdh-root / aws bom)
 
 ---
 # Conversion issues (Required?)
